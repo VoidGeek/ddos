@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDoS Attack</title>
+    <!-- Include your CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>DDoS Attack</h1>
+    <form action="/start_attack" method="post">
+        <label for="target">Target URL:</label><br>
+        <input type="text" id="target" name="target"><br><br>
+        <label for="threads">Number of Threads:</label><br>
+        <input type="text" id="threads" name="threads"><br><br>
+        <label for="mode">Proxy Mode:</label><br>
+        <select id="mode" name="mode">
+            <option value="proxy">Proxy</option>
+            <option value="socks">Socks</option>
+            <option value="none">None</option>
+        </select><br><br>
+        <input type="submit" value="Start Attack">
+    </form>
+</body>
+</html>
