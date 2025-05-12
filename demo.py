@@ -471,7 +471,7 @@ def starturl():
 
 
 	else:
-		url="http://localhost:8080"
+		url="http://localhost:8000"
 	
 		if url == "":
 			print ("Please enter the url.")
